@@ -9,10 +9,10 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 #Install Virtualenv\
  `python3 -m pip install virtualenv`
 
-#Create environment called zephyr\  
+#Create environment called zephyr  
  `python -m virtualenv zephyr`
 
-#Activate and enter VM\  
+#Activate and enter VM  
  `source zephyr/bin/activate`
 
 #You will need homebrew; get it here:\
