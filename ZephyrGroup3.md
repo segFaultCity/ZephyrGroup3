@@ -50,7 +50,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 `tar xjf ~/Downloads/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2`\
 `chmod -R -w "${HOME}"/opt/gcc-arm-none-eabi-7-2017-q4-major`\
 
-#Now back to the zephyr environment. Navigate to the main project directory:\
+#Now back to the zephyr environment. Navigate to the main project directory:
 `cd zephyrproject/zephyr`
 
 #Set up your build environment:\
@@ -71,6 +71,8 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 #Finally, run the ninja command\
 `ninja run`
+
+#Result:
 
 ![hello](hello.png)
 
