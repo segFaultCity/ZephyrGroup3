@@ -42,7 +42,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 #Scroll down to “GNU Arm Embedded Toolchain: 7-2017-q4-major” and select. (This download has no known issues, whereas 2018 is still a bit buggy).\
 
-#Scroll back up and download the Mac OS X 64-bit (This may take a minute)\
+#Scroll back up and download the Mac OS X 64-bit (This may take a minute)
 
 #Move the toolchain to home/opt (That is where Zephyr looks for toolchains by default):\
 `mkdir -p "${HOME}"/opt`
