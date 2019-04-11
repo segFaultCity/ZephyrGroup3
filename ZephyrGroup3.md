@@ -27,7 +27,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 #Check your version and make sure it’s 0.5.0 or better\
  `west --version`
 
-#Next, clone the Zephyr source code repositories from GitHub using the west tool you just installed.\  
+#Next, clone the Zephyr source code repositories from GitHub using the west tool you just installed.  
  `west init zephyrproject`  
  `cd zephyrproject`  
  `west update`  
@@ -48,7 +48,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 `mkdir -p "${HOME}"/opt`\
 `cd "${HOME}"/opt`\
 `tar xjf ~/Downloads/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2`\
-`chmod -R -w "${HOME}"/opt/gcc-arm-none-eabi-7-2017-q4-major`\
+`chmod -R -w "${HOME}"/opt/gcc-arm-none-eabi-7-2017-q4-major`
 
 #Now back to the zephyr environment. Navigate to the main project directory:
 `cd zephyrproject/zephyr`
