@@ -66,7 +66,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 #Set Zephyr Variant\
 `export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb`
 
-#CMake a board of your choosing…I use reel_board here (The board MUST be compatible with the toolchain we just downloaded…or else you will get an error when running this command):
+#CMake a board of your choosing…I use the qemu_cortex_m3 emulator here (The board MUST be compatible with the toolchain we just downloaded…or else you will get an error when running this command):
 `cmake -GNinja -DBOARD=qemu_cortex_m3 ..`
 
 #Finally, run the ninja command\
