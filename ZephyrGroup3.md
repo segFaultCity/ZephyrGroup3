@@ -57,7 +57,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 `source zephyr-env.sh`
 
 #Build the application:\
-`cd $ZEPHYR_BASE/samples/hello_world`
+`cd $ZEPHYR_BASE/samples/hello_world`\
 `mkdir build && cd build`
 
 #Set toolchain variable\
