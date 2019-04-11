@@ -35,7 +35,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 #Next, install additional Python packages required by Zephyr:  
  `pip3 install -r zephyr/scripts/requirements.txt`
 
-#This part is a bit tricky and can be done different ways by downloading different toolchains. Here is what I got working for setting the ZEPHYR_TOOLCHAIN_VARIANT (Let me know what you used if you already figured it out).\
+#This part is a bit tricky and can be done different ways by downloading different toolchains. Here is what I got working for setting the ZEPHYR_TOOLCHAIN_VARIANT.
 
 #Download the following toolchain by clicking ‘Downloads’:\
 [gnu-toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm)
@@ -66,11 +66,13 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 #Set Zephyr Variant\
 `export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb`
 
-#CMake a board of your choosing…I use reel_board here (The board MUST be compatible with the toolchain we just downloaded…or else you will get an error when running this command):\
-`cmake -GNinja -DBOARD=reel_board ..`
+#CMake a board of your choosing…I use reel_board here (The board MUST be compatible with the toolchain we just downloaded…or else you will get an error when running this command):
+`cmake -GNinja -DBOARD=qemu_cortex_m3 ..`
 
 #Finally, run the ninja command\
-`ninja`
+`ninja run`
+
+
 
 ## Functional Requirements
 
