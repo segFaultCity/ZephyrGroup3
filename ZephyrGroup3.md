@@ -1,76 +1,76 @@
-# Sprint 1 Design Document Template
+## Sprint 1 Design Document Template
 
-## Deployment Environment
+# Deployment Environment
 
 # Setting Up Environment Tutorial:
 
-Create a Zephyr virtual environment. (Some of the downloads you will need may not work on your local machine without an environment due to other downloads you may already have & user preferences set).
+Create a Zephyr virtual environment. (Some of the downloads you will need may not work on your local machine without an environment due to other downloads you may already have & user preferences set).\
 
-#Install Virtualenv
- `python3 -m pip install virtualenv`
+#Install Virtualenv\
+ `python3 -m pip install virtualenv`\
 
-#Create environment called zephyr
+#Create environment called zephyr\  
  `python -m virtualenv zephyr`
 
-#Activate and enter VM
- `source zephyr/bin/activate`
+#Activate and enter VM\  
+ `source zephyr/bin/activate`\
 
-#You will need homebrew; get it here:
-https://brew.sh
+#You will need homebrew; get it here:\
+[brew](https://brew.sh)
 
-#install these tools with brew
-`brew install cmake ninja gperf ccache dfu-util qemu dtc python3`
+#install these tools with brew\
+`brew install cmake ninja gperf ccache dfu-util qemu dtc python3`  
 
-#You will need West, a Zephyr tool
- `pip3 install west`
+#You will need West, a Zephyr tool\
+ `pip3 install west`  
 
-#Check your version and make sure it’s 0.5.0 or better
- `west --version`
+#Check your version and make sure it’s 0.5.0 or better\
+ `west --version`\  
 
-# Next, clone the Zephyr source code repositories from GitHub using the west tool you just installed.
- `west init zephyrproject`
- `cd zephyrproject`
- `west update`
+#Next, clone the Zephyr source code repositories from GitHub using the west tool you just installed.\  
+ `west init zephyrproject`\  
+ `cd zephyrproject`\  
+ `west update`\  
 
-# Next, install additional Python packages required by Zephyr:
- `pip3 install -r zephyr/scripts/requirements.txt`
+#Next, install additional Python packages required by Zephyr:\  
+ `pip3 install -r zephyr/scripts/requirements.txt`\
 
-#This part is a bit tricky and can be done different ways by downloading different toolchains. Here is what I got working for setting the ZEPHYR_TOOLCHAIN_VARIANT (Let me know what you used if you already figured it out).
+#This part is a bit tricky and can be done different ways by downloading different toolchains. Here is what I got working for setting the ZEPHYR_TOOLCHAIN_VARIANT (Let me know what you used if you already figured it out).\
 
-#Download the following toolchain by clicking ‘Downloads’:
-https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm
+#Download the following toolchain by clicking ‘Downloads’:\
+[gnu-toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm)\
 
-#Scroll down to “GNU Arm Embedded Toolchain: 7-2017-q4-major” and select. (This download has no known issues, whereas 2018 is still a bit buggy).
+#Scroll down to “GNU Arm Embedded Toolchain: 7-2017-q4-major” and select. (This download has no known issues, whereas 2018 is still a bit buggy).\
 
-#Scroll back up and download the Mac OS X 64-bit (This may take a minute)
+#Scroll back up and download the Mac OS X 64-bit (This may take a minute)\
 
-#Move the toolchain to home/opt (That is where Zephyr looks for toolchains by default):
-`mkdir -p "${HOME}"/opt`
-`cd "${HOME}"/opt`
-`tar xjf ~/Downloads/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2`
-`chmod -R -w "${HOME}"/opt/gcc-arm-none-eabi-7-2017-q4-major`
+#Move the toolchain to home/opt (That is where Zephyr looks for toolchains by default):\
+`mkdir -p "${HOME}"/opt`\
+`cd "${HOME}"/opt`\
+`tar xjf ~/Downloads/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2`\
+`chmod -R -w "${HOME}"/opt/gcc-arm-none-eabi-7-2017-q4-major`\
 
-#Now back to the zephyr environment. Navigate to the main project directory:
-`cd zephyrproject/zephyr`
+#Now back to the zephyr environment. Navigate to the main project directory:\
+`cd zephyrproject/zephyr`\
 
-# Set up your build environment:
-`source zephyr-env.sh`
+#Set up your build environment:\
+`source zephyr-env.sh`\
 
-#Build the application:
-`cd $ZEPHYR_BASE/samples/hello_world`
-`mkdir build && cd build`
+#Build the application:\
+`cd $ZEPHYR_BASE/samples/hello_world`\
+`mkdir build && cd build`\
 
-#Set toolchain variable
-`export GNUARMEMB_TOOLCHAIN_PATH='~/opt/gcc-arm-none-eabi-7-2017-q4-major/'`
+#Set toolchain variable\
+`export GNUARMEMB_TOOLCHAIN_PATH='~/opt/gcc-arm-none-eabi-7-2017-q4-major/'`\
 
-#Set Zephyr Variant
-`export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb`
+#Set Zephyr Variant\
+`export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb`\
 
-#CMake a board of your choosing…I use reel_board here (The board MUST be compatible with the toolchain we just downloaded…or else you will get an error when running this command):
-`cmake -GNinja -DBOARD=reel_board ..`
+#CMake a board of your choosing…I use reel_board here (The board MUST be compatible with the toolchain we just downloaded…or else you will get an error when running this command):\
+`cmake -GNinja -DBOARD=reel_board ..`\
 
-#Finally, run the ninja command
-`ninja`
+#Finally, run the ninja command\
+`ninja`\
 
 ## Functional Requirements
 
@@ -127,3 +127,4 @@ n/a
     - name
     - name
     - skill gap 
+
