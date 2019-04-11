@@ -72,7 +72,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 #Finally, run the ninja command\
 `ninja run`
 
-[!hello](hello.png)
+![hello](hello.png)
 
 ## Functional Requirements
 
