@@ -32,7 +32,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
  `cd zephyrproject`  
  `west update`  
 
-#Next, install additional Python packages required by Zephyr:\  
+#Next, install additional Python packages required by Zephyr:  
  `pip3 install -r zephyr/scripts/requirements.txt`
 
 #This part is a bit tricky and can be done different ways by downloading different toolchains. Here is what I got working for setting the ZEPHYR_TOOLCHAIN_VARIANT (Let me know what you used if you already figured it out).\
