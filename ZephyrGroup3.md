@@ -4,7 +4,7 @@
 
 # Setting Up Environment Tutorial:
 
-Create a Zephyr virtual environment. (Some of the downloads you will need may not work on your local machine without an environment due to other downloads you may already have & user preferences set).\
+Create a Zephyr virtual environment. (Some of the downloads you will need may not work on your local machine without an environment due to other downloads you may already have & user preferences set).
 
 #Install Virtualenv\
  `python3 -m pip install virtualenv`
@@ -37,14 +37,14 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 #This part is a bit tricky and can be done different ways by downloading different toolchains. Here is what I got working for setting the ZEPHYR_TOOLCHAIN_VARIANT.
 
-#Download the following toolchain by clicking ‘Downloads’:\
+#Download the following toolchain by clicking ‘Downloads’:
 [gnu-toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm)
 
 #Scroll down to “GNU Arm Embedded Toolchain: 7-2017-q4-major” and select. (This download has no known issues, whereas 2018 is still a bit buggy).
 
 #Scroll back up and download the Mac OS X 64-bit (This may take a minute)
 
-#Move the toolchain to home/opt (That is where Zephyr looks for toolchains by default):\
+#Move the toolchain to home/opt (That is where Zephyr looks for toolchains by default):
 `mkdir -p "${HOME}"/opt`\
 `cd "${HOME}"/opt`\
 `tar xjf ~/Downloads/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2`\
