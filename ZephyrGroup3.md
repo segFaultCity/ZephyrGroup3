@@ -44,7 +44,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 #Scroll back up and download the Mac OS X 64-bit (This may take a minute)
 
-#Move the toolchain to home/opt (That is where Zephyr looks for toolchains by default):
+#Move the toolchain to home/opt (That is where Zephyr looks for toolchains by default):\
 `mkdir -p "${HOME}"/opt`\
 `cd "${HOME}"/opt`\
 `tar xjf ~/Downloads/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2`\
