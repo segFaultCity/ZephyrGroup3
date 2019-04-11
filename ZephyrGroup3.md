@@ -40,15 +40,15 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 #Download the following toolchain by clicking ‘Downloads’:\
 [gnu-toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm)
 
-#Scroll down to “GNU Arm Embedded Toolchain: 7-2017-q4-major” and select. (This download has no known issues, whereas 2018 is still a bit buggy).\
+#Scroll down to “GNU Arm Embedded Toolchain: 7-2017-q4-major” and select. (This download has no known issues, whereas 2018 is still a bit buggy).
 
 #Scroll back up and download the Mac OS X 64-bit (This may take a minute)
 
 #Move the toolchain to home/opt (That is where Zephyr looks for toolchains by default):\
-`mkdir -p "${HOME}"/opt`
-`cd "${HOME}"/opt`
-`tar xjf ~/Downloads/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2`
-`chmod -R -w "${HOME}"/opt/gcc-arm-none-eabi-7-2017-q4-major`
+`mkdir -p "${HOME}"/opt`\
+`cd "${HOME}"/opt`\
+`tar xjf ~/Downloads/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2`\
+`chmod -R -w "${HOME}"/opt/gcc-arm-none-eabi-7-2017-q4-major`\
 
 #Now back to the zephyr environment. Navigate to the main project directory:\
 `cd zephyrproject/zephyr`
@@ -72,7 +72,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 #Finally, run the ninja command\
 `ninja run`
 
-
+[!hello](hello.png)
 
 ## Functional Requirements
 
