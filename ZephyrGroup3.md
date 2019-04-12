@@ -78,9 +78,11 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 ## Functional Requirements
 
-1. Use Case Name A
-	- Functional Requirement 1
-	- Functional Requirement 2
+- Create a Functional User Interface that that will house 3 naviagtion buttons. Each button will link to one of three modes we provide for the user. This will be the landing page and the appearance should be aestetically pleasing.
+
+1. Random Reminders
+	- Create a user interface that is both astetic and easy to naviagte.
+	- Create an upload button that will pull data from the Google Calender API
 	- ... etc.
 2. Use Case Name B		
 	- Functional Requirement 1
