@@ -78,7 +78,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 ## Functional Requirements
 
-- Create a Functional User Interface that that will house 3 naviagtion buttons (The buttons: "Set Random Reminders", "Set Daily Schedules", "Set Infant Routines" . Each button will link to one of three modes we provide for the user. This will be the landing page and the appearance should be aestetically pleasing.
+- Create a Functional User Interface that that will house 3 naviagtion buttons (The buttons: "Set Random Reminders", "Set Daily Schedules", "Set Infant Routines") . Each button will link to one of three modes we provide for the user. This will be the landing page and the appearance should be aestetically pleasing.
 
 1. Random Reminders
 	- When this button is pressed, there should be a new interface which will present the following buttons:
@@ -90,10 +90,13 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 			- The backend at this point should connect to the Google Maps API and calculate the time needed to arrive at the destination. This calculated time will subtact from the time input by the user.
 			- User preferences, if set, will subtract from the resulting time made by the previous calculation.
 			- The alarm will now finally be set. The final calculated time should be written to a C file and in local storgae on the browser.
-		- Set Preferences
+		- Set Preferences:
+			- A modal form should pop up after this option is selected.
+			- The user should be presented with the following questions:
+				- How long does it take you to get ready? (Provide input box restricted to integers)
+				- Do you need more time to wake up? (Slow wake up option) (Provide yes/no)
+			- These times will be used for calculating the alarm time.
 			
-	- Create an upload button that will pull data from the Google Calender API
-	- ... etc.
 2. Use Case Name B		
 	- Functional Requirement 1
 	- Functional Requirement 2
