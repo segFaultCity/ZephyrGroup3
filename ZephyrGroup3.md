@@ -146,7 +146,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 ### User Interface Files
  
-![UserInterfaceFunctionalStub](https://github.com/segFaultCity/ZephyrGroup3/blob/master/UserInterfaceStub.png)
+![UserInterfaceFunctionalStub](https://github.com/segFaultCity/ZephyrGroup3/blob/master/InterfaceStub.png)
 
 ### Model Files (Database Access)
 
