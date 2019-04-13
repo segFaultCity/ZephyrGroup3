@@ -168,10 +168,10 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 1. General Strengths and Weaknesses:
 	- Ben Blanquart
-		- Strengths: Strong python background, strong C background, strong database background, web development experience, some experience with microcontrollers.
+		- Strengths: Strong python background, strong C background, strong database background, web development experience, some experience with microcontrollers. PHP experience.
 		- Weaknesses: No Zephyr OS experience, limited virtual machine background.
  	- Christian Caldwell
-		- Strengths: Strong web development background, strong C background, strong database background, AWS server experience.
+		- Strengths: Strong web development background, strong C background, strong database background, AWS server experience. PHP experience.
 		- Weaknesses: No python experience, no Zephyr experience, no microcontroller experience, limited virtual machine background.
 	- Michael Rubenstein
 		- Strengths: Strong C experience, strong database experience, strong virtual machine experience. 
@@ -181,6 +181,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 	- Python (For backend): Ben Blanquart.
 	- HTML/CSS/Javascript (For user interface, form creation, and C File writing): Christian Caldwell & Ben Blanquart.
 	- C (For backend and zephyr running): Michael Rubenstein, Christian Caldwell, and Ben Blanquart.
+	- PHP (Maybe): Christian Caldwell & Ben Blanquart.
 	
 3. Data handling and possible Database use:
 	- Local Storage: The data a user inputs through the html form can be saved locally by a browsers local storgae. With local storage, we can save and reuse user data without the use of a database. (Christian Caldwell has experience using local storgae)
