@@ -161,10 +161,12 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 	- Pseudo Code (Would be called using javascript)
 	- Prerequisite: API key Google.
 	
-	function initMap() {  
+	```
+	function initMap() {
 		    	//Google API function  
 		    	var map = initialized coordinates  
 	} 
+	```
 	
 	function initDirections() {  
 		var A = (current location grabbed by location finder)  
