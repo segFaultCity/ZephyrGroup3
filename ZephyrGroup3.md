@@ -123,15 +123,17 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 	- When this button is pressed, there should be a new interface which will present the following buttons:
 		- Set an Infant Routine:
 			- A modal form should pop up after this option is selected.
-			- the user should be presented the following questions:
+			- The user should be presented the following questions:
 				- What type of Routine is this (Nap Time, Feeding, Medicine, Other) (Presented as dropdown)
 				- What time should this routine be set for? (Provide input box restricted to integers)
 				- Add Notes. (Provide a text field that will allow them to create notes or additonal reminders upon being alarmed).
+			- The routine time will be set earlier if user preferences are set for preparation time needed. 	
 		- Set Routine Preferences:
 			- A modal form should pop up after this option is selected.
 			- The user should be presented with the following questions:
 				- How long do you need to prepare for the infants routine?
 				- If a nap time is set, what song would you like to play? (Provide an upload for a song or and a list of built in grooooooovy tunes)
+				- The above song will play if set when a routine type is "Nap Time"
 				
 
 ## Database Design
