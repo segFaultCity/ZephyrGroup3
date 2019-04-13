@@ -166,16 +166,14 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 		    	//Google API function  
 		    	var map = initialized coordinates  
 	} 
-	```
-	````
+	
 	function initDirections() {  
 		var A = (current location grabbed by location finder)  
 		var directionsService = new google.maps.DirectionsService;  
 		var B = (user input location for reminder)  
 		directionsRenderer(A,B)  
 	}	
-	```
-	```	
+		
 	grabDistance {  
 		//API grabs home distance and time away from home to work/reminder destination.  
 		var time = API time grabbed  
