@@ -101,6 +101,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 	- When this button is pressed, there should be a new interface which will present the following buttons:
 		- Set a Daily Schedule:
 			- A modal form should pop up after this option is selected.
+			- The user will have two options: Either set the daily schedule manually or pull from the Google Calender API using there Google account. Using the Google Calendar API, the backend should connect to the users account via there credentials and pull there daily calender data. This will automatically populate the form fields below to the best of its ability. If the user does not select this option, they can fill out the following form:
 			- The following fields should be added to the form:
 				- Title of the daily schedule.
 				- What time it occurs everyday.
@@ -118,7 +119,20 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 				- Do you need more time to wake up? (Slow wake up option) (Provide yes/no)
 			- These times will be used for calculating the alarm time.	
 
-3. ... etc. 
+3. Infant Routines
+	- When this button is pressed, there should be a new interface which will present the following buttons:
+		- Set an Infant Routine:
+			- A modal form should pop up after this option is selected.
+			- the user should be presented the following questions:
+				- What type of Routine is this (Nap Time, Feeding, Medicine, Other) (Presented as dropdown)
+				- What time should this routine be set for? (Provide input box restricted to integers)
+				- Add Notes. (Provide a text field that will allow them to create notes or additonal reminders upon being alarmed).
+		- Set Routine Preferences:
+			- A modal form should pop up after this option is selected.
+			- The user should be presented with the following questions:
+				- How long do you need to prepare for the infants routine?
+				- If a nap time is set, what song would you like to play? (Provide an upload for a song or and a list of built in grooooooovy tunes)
+				
 
 ## Database Design
 
