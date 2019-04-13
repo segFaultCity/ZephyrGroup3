@@ -157,9 +157,29 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 ### Controller Files (API or other)
 
-1. first one 
-2. second one
-3. etc. 
+1. Google Maps API function:
+	- Pseudo Code (Would be called using javascript)
+	- Prerequisite: API key Google.
+	
+	function initMap() {  
+		//Google API function  
+		var map = initialized coordinates  
+	}  
+	
+	function initDirections() {  
+		var A = (current location grabbed by location finder)  
+		var directionsService = new google.maps.DirectionsService;  
+		var B = (user input location for reminder)  
+		directionsRenderer(A,B)  
+	}	
+		
+	grabDistance {  
+		//API grabs home distance and time away from home to work/reminder destination.  
+		var time = API time grabbed  
+		return time  
+	}  
+	
+	
 
 ## Describe languages you need to use, and any gaps in skills on your team. 
 
@@ -168,7 +188,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 		- Strengths: Strong python background, strong C background, strong database background, web development experience, some experience with microcontrollers. PHP experience.
 		- Weaknesses: No Zephyr OS experience, limited virtual machine background.
  	- Christian Caldwell
-		- Strengths: Strong web development background, strong C background, strong database background, AWS server experience. PHP experience.
+		- Strengths: Strong web development background, strong C background, strong database background, AWS server experience, PHP experience, Google Maps API experience.
 		- Weaknesses: No python experience, no Zephyr experience, no microcontroller experience, limited virtual machine background.
 	- Michael Rubenstein
 		- Strengths: Strong C experience, strong database experience, strong virtual machine experience. 
