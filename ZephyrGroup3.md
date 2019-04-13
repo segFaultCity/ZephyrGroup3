@@ -171,7 +171,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 		- Strengths: Strong python background, strong C background, strong database background, web development experience, some experience with microcontrollers.
 		- Weaknesses: No Zephyr OS experience, limited virtual machine background.
  	- Christian Caldwell
-		- Strengths: Strong C background, strong database background, strong web development background, Server experience.
+		- Strengths: Strong web development background, strong C background, strong database background, AWS server experience.
 		- Weaknesses: No python experience, no Zephyr experience, no microcontroller experience, limited virtual machine background.
 	- Michael Rubenstein
 		- Strengths: Strong C experience, strong database experience, strong virtual machine experience. 
