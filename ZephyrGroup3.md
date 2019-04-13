@@ -162,8 +162,8 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 	- Prerequisite: API key Google.
 	
 	function initMap() {  
-		    //Google API function  
-		    var map = initialized coordinates  
+		    	//Google API function  
+		    	var map = initialized coordinates  
 	} 
 	
 	function initDirections() {  
