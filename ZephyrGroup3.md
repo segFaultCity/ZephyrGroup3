@@ -145,7 +145,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 ## Files that are stubbed out in your repository, with comments about the use cases they are connected to. These sections may not all exist for the Zephyr project teams. Simply explain them as best you can. 
 
 ### User Interface Files
-
+ 
 ![UserInterfaceFunctionalStub](https://github.com/segFaultCity/ZephyrGroup3/blob/master/UserInterfaceStub.png)
 
 ### Model Files (Database Access)
