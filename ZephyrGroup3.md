@@ -157,7 +157,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 ### Controller Files (API or other)
 
-1. Google Maps API function:
+1. Google Maps API function: (Used by Daily Schedule and Random Reminders use cases)
 	- Pseudo Code (Would be called using javascript)
 	- Prerequisite: Google API key.
 	
@@ -181,7 +181,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 	}  
 	```
 	
-2. Google Calender API function:
+2. Google Calender API function: (Used by Daily Schedule and Random Reminders use cases)
 	- Pseduo Code (Would be called using javascript)
 	- Prerequisite: Google API key.
 	
