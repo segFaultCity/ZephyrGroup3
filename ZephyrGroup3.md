@@ -87,10 +87,10 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 			- There should be three input text boxes, one for the reminder title, another for a location, and the last for time.
 			- A submit button should be created.
 			- When the submit button is pressed, the reminder information should be written to a C file or as JSON.
-			- The backend at this point should connect to the Google Maps API and calculate the time needed to arrive at the destination. This calculated time will subtact from the time input by the user.
+			- The backend at this point should connect to the Google Maps API and calculate the time needed to arrive at the destination based of the location entered. This calculated time will subtact from the time input by the user.
 			- User preferences, if set, will subtract from the resulting time made by the previous calculation.
 			- The alarm will now finally be set. The final calculated time should be written to a C file and in local storgae on the browser.
-		- Set Preferences:
+		- Set Random Preferences:
 			- A modal form should pop up after this option is selected.
 			- The user should be presented with the following questions:
 				- How long does it take you to get ready? (Provide input box restricted to integers)
@@ -98,9 +98,26 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 			- These times will be used for calculating the alarm time.
 			
 2. Daily Schedule		
-	- Functional Requirement 1
-	- Functional Requirement 2
-	- ... etc.
+	- When this button is pressed, there should be a new interface which will present the following buttons:
+		- Set a Daily Schedule:
+			- A modal form should pop up after this option is selected.
+			- The following fields should be added to the form:
+				- Title of the daily schedule.
+				- What time it occurs everyday.
+				- Create a dropdown menu that allows the user to choose the type of daily schedule. (Work, recreational, workout, meeting, etc.)
+				- The location of the daily schedule.
+			- There should be a submit button located at the end of the form.
+			- When the submit button is pressed, the reminder information should be written to a C file or as JSON.
+			- The backend at this point should connect to the Google Maps API and calculate the time needed to arrive at the destination based of the location entered. This calculated time will subtact from the time input by the user.
+			- User preferences, if set, will subtract from the resulting time made by the previous calculation.
+			- The alarm will now finally be set recursively everyday. The final calculated time should be written to a C file and in local storgae on the browser.
+		- Set Daily Preferences:
+			- A modal form should pop up after this option is selected.
+			- The user should be presented with the following questions:
+				- How long does it take you to get ready? (Provide input box restricted to integers)
+				- Do you need more time to wake up? (Slow wake up option) (Provide yes/no)
+			- These times will be used for calculating the alarm time.	
+
 3. ... etc. 
 
 ## Database Design
