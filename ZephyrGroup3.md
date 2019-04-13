@@ -177,3 +177,15 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 		- Strengths: Strong C experience, strong database experience, strong virtual machine experience. 
 		- Weaknesses: No python experience, no Zephyr experience, no microcontroller experience.
 
+2. Languages we will need and who will be most effective working with it:
+	- Python (For backend): Ben Blanquart.
+	- HTML/CSS/Javascript (For user interface, form creation, and C File writing): Christian Caldwell & Ben Blanquart.
+	- C (For backend and zephyr running): Michael Rubenstein, Christian Caldwell, and Ben Blanquart.
+	
+3. Data handling and possible Database use:
+	- Local Storage: The data a user inputs through the html form can be saved locally by a browsers local storgae. With local storage, we can save and reuse user data without the use of a database. (Christian Caldwell has experience using local storgae)
+	- If not by local storgae: A database can be created by all three members of group 3. By SQL, we can dynamically populate a database with user daved data and reuse that for future use. PHP may be needed for this; in this case, both Christian Caldwell and Ben Blanquart have PHP experience and can use this to send/pull data from the database.
+	
+4. Team skill gaps:
+	- Our team lacks the general knowledge of running and constructing Zephyr projects.
+	- Our team will make up for this skill gap by practicing and running sample projects already made by Zephyr. Through these trials, we will see how builds are made and attempt to create our own architecture.
