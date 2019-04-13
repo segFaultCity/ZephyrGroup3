@@ -166,12 +166,14 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 ## Describe languages you need to use, and any gaps in skills on your team. 
 
-1. first language 
-    - how you will use examples or learn what you need
-2. second language 
-    - how you will use examples or learn what you need
-3. Skill gaps, if any, otherwise specify who is doing what
-    - name
-    - name
-    - skill gap 
+1. General Strengths and Weaknesses:
+	- Ben Blanquart
+		- Strengths: Strong python background, strong C background, strong database background, web development experience, some experience with microcontrollers.
+		- Weaknesses: No Zephyr OS experience, limited virtual machine background.
+ 	- Christian Caldwell
+		- Strengths: Strong C background, strong database background, strong web development background, Server experience.
+		- Weaknesses: No python experience, no Zephyr experience, no microcontroller experience, limited virtual machine background.
+	- Michael Rubenstein
+		- Strengths: Strong C experience, strong database experience, strong virtual machine experience. 
+		- Weaknesses: No python experience, no Zephyr experience, no microcontroller experience.
 
