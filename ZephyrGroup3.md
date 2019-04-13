@@ -164,21 +164,33 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 	```
 	function initMap() {
 		//Google API function  
-		var map = initialized coordinates  
+		var map = initialized coordinates //initializes starting position of map before location service starts
 	} 
 	
 	function initDirections() {  
 		var A = (current location grabbed by location finder)  
-		var directionsService = new google.maps.DirectionsService;  
+		var directionsService = new google.maps.DirectionsService; //google maps built in direction service  
 		var B = (user input location for reminder)  
-		directionsRenderer(A,B)  
+		directionsRenderer(A,B) 
 	}	
 		
 	grabDistance {  
 		//API grabs home distance and time away from home to work/reminder destination.  
-		var time = API time grabbed  
+		var time = directionsRenderer time returned  
 		return time  
 	}  
+	```
+	
+2. Google Calender API function:
+	- Pseduo Code (Would be called using javascript)
+	- Prerequisite: Google API key.
+	
+	```
+	function calenderPull() {
+		//google API retrieves user data from calender using their credentials sent through the API
+		var userData = //object the API returns
+		return userData
+	}
 	```
 	
 	
