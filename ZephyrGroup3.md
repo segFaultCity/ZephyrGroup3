@@ -74,7 +74,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 #Result:
 
-![hello](hello.png)
+![hello](https://github.com/segFaultCity/ZephyrGroup3/blob/master/hello.png)
 
 ## Functional Requirements
 
@@ -97,7 +97,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 				- Do you need more time to wake up? (Slow wake up option) (Provide yes/no)
 			- These times will be used for calculating the alarm time.
 			
-2. Use Case Name B		
+2. Daily Schedule		
 	- Functional Requirement 1
 	- Functional Requirement 2
 	- ... etc.
