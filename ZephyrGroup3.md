@@ -165,6 +165,40 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 		
 	}
 	```
+	
+2. Retrieveing saved data (Used by all use cases):
+	
+	```
+	function retrieveData() {
+		
+		var value = storage.getItem(object);
+		var a = object.name
+		etc...
+		
+	}
+	```
+	
+3. Submit button function (Used by all use cases):
+	
+	```
+	function submit() {
+		
+		saveData() //as shown above
+		calculateTime(locationSentFromInput, timeInputByUser) 
+		//write the returned result from "calculateTime" to a C file
+		
+	}	
+	
+	function calculateTime(x, y) {
+		
+		var time //holds time sent to zephyr code and used by hardware to alarm stakeholder 
+		var dTime = grab Google Map information as shows below under Controller Files
+		var pTime = user prefernce time needed
+		time = y - dTime - pTime
+		return time
+		
+	}			
+	```
 
 
 ### Controller Files (API or other)
