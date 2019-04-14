@@ -146,18 +146,30 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 ### User Interface Files
 
-1. User Interface flow to Zephyr (Used by all Use Cases)
+1. User Interface flow to Zephyr (Used by all Use Cases):
  
 ![UserInterfaceFunctionalStub](https://github.com/segFaultCity/ZephyrGroup3/blob/master/UserInterfaceStubbed.png)
 
 ### Model & Other Files (Database/Local Storage Access & More)
 
-1. 
+1. Saving data to localStorage (Used by all Use Cases):
+
+	- Pseudo Code (using javascript)
+	
+	```
+	function saveData() {
+		
+		//Retrieve data input by the user.
+		//Store the data into a JSON object
+		localStorage.setItem(object)
+		
+	}
+	```
 
 
 ### Controller Files (API or other)
 
-1. Google Maps API function: (Used by Daily Schedule and Random Reminders use cases)
+1. Google Maps API function (Used by Daily Schedule and Random Reminders use cases):
 	- Pseudo Code (Would be called using javascript)
 	- Prerequisite: Google API key.
 	
@@ -181,7 +193,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 	}  
 	```
 	
-2. Google Calender API function: (Used by Daily Schedule and Random Reminders use cases)
+2. Google Calender API function (Used by Daily Schedule and Random Reminders use cases):
 	- Pseduo Code (Would be called using javascript)
 	- Prerequisite: Google API key.
 	
