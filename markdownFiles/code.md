@@ -8,5 +8,11 @@
 
 # Zephyr Code:
 [Zephyr Code Here](https://github.com/segFaultCity/ZephyrGroup3/tree/master/code/Zephyr-Group-3/Project)
-- IMPORTANT: This code must be in the VM to run. Our group has a download for a working VM that's prebuilt for users. Get the VM and learn how to run the code here:  
+- IMPORTANT: This code must be in the VM to run. Our group has a download for a working VM that's prebuilt for users. Get the VM and learn how to run the code here:    
 [Run our app on VM](https://github.com/segFaultCity/ZephyrGroup3/blob/master/README.md)
+
+# PHP Code (database manipulation and more):  
+[PHP Code Here](https://github.com/segFaultCity/ZephyrGroup3/tree/master/code/php)
+
+# CSS Code (Because that user interface needs to be pretty):  
+[CSS Code Here](https://github.com/segFaultCity/ZephyrGroup3/tree/master/code/css)
