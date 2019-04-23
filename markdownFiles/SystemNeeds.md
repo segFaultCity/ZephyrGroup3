@@ -12,4 +12,4 @@ Overview:
 2. Frontend: HTML5, JavaScript, and CSS3.  
 3. Data Sources: We have revised or data saving plans. Our use cases are now functioning under an Amazon Web Service Relational Database instance. This instance is initialized to MySQL.  
 
-![communication](https://github.com/segFaultCity/ZephyrGroup3/blob/master/dataCommunication.png)
+![communication](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/dataCommunication.png)
