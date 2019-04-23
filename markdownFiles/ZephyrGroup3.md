@@ -74,7 +74,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 #Result:
 
-![hello](https://github.com/segFaultCity/ZephyrGroup3/blob/master/hello.png)
+![hello](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/hello.png)
 
 ## Functional Requirements
 
@@ -140,7 +140,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 ### ERD
 
-![ERD](https://github.com/segFaultCity/ZephyrGroup3/blob/master/ERDzephyr.png)
+![ERD](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/ERDzephyr.png)
 
 ## Files that are stubbed out in your repository, with comments about the use cases they are connected to. These sections may not all exist for the Zephyr project teams. Simply explain them as best you can. 
 
@@ -148,7 +148,7 @@ Create a Zephyr virtual environment. (Some of the downloads you will need may no
 
 1. User Interface flow to Zephyr (Used by all Use Cases):
  
-![UserInterfaceFunctionalStub](https://github.com/segFaultCity/ZephyrGroup3/blob/master/UserInterfaceStubbed.png)
+![UserInterfaceFunctionalStub](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/UserInterfaceStubbed.png)
 
 ### Model & Other Files (Database/Local Storage Access & More)
 
