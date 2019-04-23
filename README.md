@@ -40,3 +40,6 @@ Routine is inserted into our database:
 
 Emulating the app GET request by our webservice:
 ![GET by Web](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/GETRequestByWeb.png)
+
+Running the zephyr app and getting the same result:
+![Zephyr GET](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/zephyrAppRunning.jpg)
