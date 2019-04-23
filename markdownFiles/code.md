@@ -24,11 +24,11 @@
 
 # Unit Test Created:
 1. We added fake users by making user accounts. Check out the GET request returned by these dummy users by our webservice emulator:
-[Username: ChrisCaldwell55](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/webService.php?username=ChrisCaldwell55&reminder=infantRoutine)
-[Username: michael](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/webService.php?username=michael&reminder=infantRoutine)
-[Username: testUser](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/webService.php?username=testUser&reminder=infantRoutine)
+[Username: ChrisCaldwell55](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/webService.php?username=ChrisCaldwell55&reminder=infantRoutine)  
+[Username: michael](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/webService.php?username=michael&reminder=infantRoutine)  
+[Username: testUser](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/webService.php?username=testUser&reminder=infantRoutine)  
 
-  - NOTE: The dummy data you can easily view here is the same data that is returned when running through the zephyr build we created and made available in our README.md. This webservice you are viewing is what our Zephyr application grabs to create the alarm. To achieve the same results on the zephyr app we created, run the app and when prompted input one of the usernmaes above. 
+  - NOTE: The dummy data you can easily view here is the same data that is returned when running through the zephyr build we created and made available in our README.md. This webservice you are viewing is what our Zephyr application grabs to create the alarm. To achieve the same results on the zephyr app we created: Run the app and when prompted, input one of the usernames above. 
   - WARNING: The zephyr build will segfault if you run a user that has not been created.
   - Suggestion: Visit the website and create your own user account. Then create a routine and hit submit once. Now run the zephyr build with your username when prompted.[Website here](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/) 
   
