@@ -30,6 +30,6 @@
 
   - NOTE: The dummy data you can easily view here is the same data that is returned when running through the zephyr build we created and made available in our README.md. This webservice you are viewing is what our Zephyr application grabs to create the alarm. To achieve the same results on the zephyr app we created: Run the app and when prompted, input one of the usernames above. 
   - WARNING: The zephyr build will segfault if you run a user that has not been created.
-  - Suggestion: Visit the website and create your own user account. Then create a routine and hit submit once. Now run the zephyr build with your username when prompted.  
+  - Suggestion: Visit the website and create your own user account, then create a routine and hit submit once. Now run the zephyr build with your username when prompted.  
   [Website here](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/) 
   
