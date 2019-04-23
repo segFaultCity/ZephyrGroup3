@@ -22,7 +22,7 @@
 [code.md](https://github.com/segFaultCity/ZephyrGroup3/blob/master/markdownFiles/code.md)  
 [Base README.md](https://github.com/segFaultCity/ZephyrGroup3/blob/master/README.md)  
 
-# Unit Test Created:
+# Unit Testing Created:
 1. We added fake users by making user accounts. Check out the GET request returned by these dummy users by our webservice emulator:  
 [Username: ChrisCaldwell55](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/webService.php?username=ChrisCaldwell55&reminder=infantRoutine)  
 [Username: michael](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/webService.php?username=michael&reminder=infantRoutine)  
@@ -32,4 +32,7 @@
   - WARNING: The zephyr build will segfault if you run a user that has not been created.
   - Suggestion: Visit the website and create your own user account, then create a routine and hit submit once. Now run the zephyr build with your username when prompted.  
   [Website here](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/) 
+  
+  Example of output when running the build with username: ChrisCaldwell55...  
+  ![example output](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/zephyrAppRunning.jpg)
   
