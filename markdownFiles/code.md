@@ -16,3 +16,8 @@
 
 # CSS Code (Because that user interface needs to be pretty):  
 [CSS Code Here](https://github.com/segFaultCity/ZephyrGroup3/tree/master/code/css)
+
+# Files Added to Sprint 2 WiKi:  
+[SystemNeeds.md](https://github.com/segFaultCity/ZephyrGroup3/blob/master/markdownFiles/SystemNeeds.md)  
+[code.md](https://github.com/segFaultCity/ZephyrGroup3/blob/master/markdownFiles/code.md)  
+[Base README.md](https://github.com/segFaultCity/ZephyrGroup3/blob/master/README.md)  
