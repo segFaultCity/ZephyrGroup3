@@ -33,5 +33,5 @@ Emulate GET request here:
 Run GET request and receive alarm times through zephyr on your environment by following these steps on our repositorys README.md:  
 [Run Our App on a Zephyr Environment](https://github.com/segFaultCity/ZephyrGroup3/blob/master/README.md)
 
-# Finaized Emulator choice for our project:
+# Finalized Emulator choice for our project:
 [Check out our emulator](https://github.com/segFaultCity/ZephyrGroup3/blob/master/markdownFiles/qemu.md)
