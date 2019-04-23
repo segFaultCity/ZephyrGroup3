@@ -10,7 +10,7 @@ Home automation system the provides random reminders, alarms for schedules, and 
 Install Virtual Box if you have not already done so  
 
 Download the virtual appliace from here:     
-[Download our Build](BEN PUT YOUR LINK HERE)  
+[Download our Build](https://www.mediafire.com/file/l31su68apvbzyzl/ZephyrOS2.ova/file)  
 
 Import the virtual appliance by clicking file ->  import appliance and navigate and select the .ova file you donloaded in the previos step  
 
