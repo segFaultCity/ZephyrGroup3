@@ -14,6 +14,6 @@ CREATE TABLE IF NOT EXISTS infant_routines (
 ```
 CREATE TABLE IF NOT EXISTS user_info ( 
   username VARCHAR(255), 
-  PASSWORD VARCHAR(255), 
+  password VARCHAR(255), 
 )  ENGINE=INNODB;
 ```
