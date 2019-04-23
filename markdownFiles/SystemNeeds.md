@@ -36,6 +36,6 @@ Run GET request and receive alarm times through zephyr on your environment by fo
 # Finalized Emulator choice for our project:
 [Check out our emulator](https://github.com/segFaultCity/ZephyrGroup3/blob/master/markdownFiles/qemu.md)
 
-#Visual Design:
+# Visual Design:
 
 ![Visual Design](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/visualDesign.png)
