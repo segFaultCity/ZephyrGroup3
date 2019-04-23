@@ -1,0 +1,19 @@
+# USER CREATED INFANT ROUTINES
+```
+CREATE TABLE IF NOT EXISTS infant_routines ( 
+  username VARCHAR(255), 
+  title VARCHAR(255), 
+  name VARCHAR(255), 
+  time VARCHAR(255), 
+  frequency VARCHAR(255) 
+)  ENGINE=INNODB;
+
+```
+# USER ACCOUNT INFORMATION
+
+```
+CREATE TABLE IF NOT EXISTS user_info ( 
+  username VARCHAR(255), 
+  password VARCHAR(255), 
+)  ENGINE=INNODB;
+```
