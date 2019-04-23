@@ -46,3 +46,6 @@ Running the zephyr app and getting the same result:
 
 # Checkout the sprint2 doc:
 [Sprint2](https://github.com/segFaultCity/ZephyrGroup3/blob/master/markdownFiles/SystemNeeds.md)
+
+# Difficulties we ran into:
+[Sprint 2 Difficulties](https://github.com/segFaultCity/ZephyrGroup3/blob/master/markdownFiles/Sprint2Difficulties.md)
