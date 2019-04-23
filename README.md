@@ -29,3 +29,14 @@ Next compile the project
 
 To run the project run the command  
 `./clock`
+
+# Proof our system works:
+
+Routine Creation:
+![Routine Creation](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/routineCreation.png)  
+
+Routine is inserted into our database:
+![Data Insertion](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/insertionIntoDatabase.png)
+
+Emulating the app GET request by our webservice:
+![GET by Web](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/GETRequestByWeb.png)
