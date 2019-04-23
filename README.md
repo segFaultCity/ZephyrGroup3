@@ -14,7 +14,7 @@ Download the virtual appliace from here:
 
 Import the virtual appliance by clicking file ->  import appliance and navigate and select the .ova file you donloaded in the previos step  
 
-Boot Up the newly created virtual macine and login the the "User" account and use password "pass"  
+Boot Up the newly created virtual macine and login to the "User" account and use password "pass"  
 
 Navigate to Documents/zephyr in the terminal  
 
