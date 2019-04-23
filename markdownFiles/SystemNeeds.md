@@ -24,11 +24,11 @@ The following are steps on how the system works:
 3. After this selection, the user is presented with a form in which they can create any necessary routines. (This data is sent to our database by PHP).
 4. Now, the hardware we created and ran by Zephyr pulls this created routine through a GET request to our server. The Retrieved data is then displayed in the Zephyr environment and is made available for alerts.  
 
-Create your own account and infant routine:  
-[Remind O' Clock](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/)
+Create your own account and infant routine:    
+[Remind O' Clock](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/)  
 
-Emulate GET request here:
-[Remind O' Clock WebService](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/webService.php?)
+Emulate GET request here:  
+[Remind O' Clock WebService](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/webService.php?)  
 
-Run GET request and receive alarm times through zephyr on your environment by following these steps on our repositorys README.md:
+Run GET request and receive alarm times through zephyr on your environment by following these steps on our repositorys README.md:  
 [Run Our App on a Zephyr Environment](https://github.com/segFaultCity/ZephyrGroup3/blob/master/README.md)
