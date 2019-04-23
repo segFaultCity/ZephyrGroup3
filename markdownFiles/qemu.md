@@ -1,1 +1,2 @@
+# Selected Emulator for Group 3's Product:
 We will be using the emulator qemu_x86 to emulate our zephyr applications. Zephyr is only designed to work with certain processors and certain boards and qemu_x86 offers us a way to emulate the 32 bit architecture without having to have access to the physical hardware. Qemu_x86 provides an emulated ethernet port which we can configure to grab information from our server and from Google’s APIs.
