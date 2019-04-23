@@ -43,3 +43,6 @@ Emulating the app GET request by our webservice:
 
 Running the zephyr app and getting the same result:
 ![Zephyr GET](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/zephyrAppRunning.jpg)
+
+# Checkout the sprint2 doc:
+[Sprint2](https://github.com/segFaultCity/ZephyrGroup3/blob/master/markdownFiles/SystemNeeds.md)
