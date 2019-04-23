@@ -5,27 +5,27 @@ Home automation system the provides random reminders, alarms for schedules, and 
 
 
 
-##Sprint 2 Installation and Configuration
+## Sprint 2 Installation and Configuration
 
-#install Virtual Box if you have not already done so
+Install Virtual Box if you have not already done so  
 
-#Download the virtual appliace from here: 
-  `download.com`
+Download the virtual appliace from here:     
+[Download our Build](BEN PUT YOUR LINK HERE)  
 
-#Import the virtual appliance by clicking file ->  import appliance and navigate and select the .ova file you donloaded in the previos step
+Import the virtual appliance by clicking file ->  import appliance and navigate and select the .ova file you donloaded in the previos step  
 
-#Boot Up the newly created virtual macine and login the the "User" account and use password "pass"
+Boot Up the newly created virtual macine and login the the "User" account and use password "pass"  
 
-#Navigate to Documents/zephyr in the terminal
+Navigate to Documents/zephyr in the terminal  
 
-#Run the command
+Run the command  
 `source zephyr/bin/activate`
 
-#Now navigate to our project folder in the terminal inside the zephyr venv
-`cd zephyrproject/zephyr/Zephyr-Group-3/Project`
+Now navigate to our project folder in the terminal inside the zephyr venv    
+`cd zephyrproject/zephyr/Zephyr-Group-3/Project`  
 
-#Next compile the project
-`make -f Makefile.posix`
+Next compile the project  
+`make -f Makefile.posix`  
 
-#To run the project run the command
+To run the project run the command  
 `./clock`
