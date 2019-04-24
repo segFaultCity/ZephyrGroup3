@@ -1,5 +1,7 @@
 ## Zephyr Group Three
-# Remind O’ Clock Application  
+# Remind O’ Clock Application
+
+This Interaction to the system description will take the persona of one particular stakeholder: A parent of a busy/full household.  
   
 Persona:  
 Name: Marsha Staple  
