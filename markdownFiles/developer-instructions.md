@@ -58,3 +58,11 @@ CREATE TABLE IF NOT EXISTS infant_routines (
 ```
 [All Database Schemes](https://github.com/segFaultCity/ZephyrGroup3/blob/master/markdownFiles/databaseScheme.md)
 
+# Current Issues
+
+[Zephyr Group 3 Issues](https://github.com/segFaultCity/ZephyrGroup3/issues)
+
+# Zephyr Final Target System
+
+[Finalized Target System](https://github.com/segFaultCity/ZephyrGroup3/blob/master/markdownFiles/final-target-system.md)
+
