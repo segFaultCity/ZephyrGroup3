@@ -34,3 +34,27 @@ Enter the username that you used on our AWS website and select the reminder you 
 
 As Use case two and three have been added/implemented to our website and app, we have developed new tables on our AWS database instance. They are as follows:
 
+# USER CREATED DAILY SCHEDULES
+```
+CREATE TABLE IF NOT EXISTS daily_schedules ( 
+  username VARCHAR(255), 
+  title VARCHAR(255), 
+  where VARCHAR(255), 
+  time VARCHAR(10), 
+  days VARCHAR(255) 
+)  ENGINE=INNODB;
+
+```
+# USER CREATED RANDOM REMINDERS
+```
+CREATE TABLE IF NOT EXISTS infant_routines ( 
+  username VARCHAR(255), 
+  title VARCHAR(255), 
+  where VARCHAR(255), 
+  time VARCHAR(255),
+  note VARCHAR(255)
+)  ENGINE=INNODB;
+
+```
+[All Database Schemes](https://github.com/segFaultCity/ZephyrGroup3/blob/master/markdownFiles/databaseScheme.md)
+
