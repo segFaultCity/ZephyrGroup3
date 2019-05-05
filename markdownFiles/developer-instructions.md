@@ -1,4 +1,6 @@
 
+# Directions to install our Zephyr App
+
 Before accessing our project from the Zephyr side you must first create an account from our AWS website.
 http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/index.php
 
@@ -9,7 +11,7 @@ Install Virtual Box if you have not already done so
 Download the virtual appliace from here:     
 [Download our Build](https://www.mediafire.com/file/l31su68apvbzyzl/ZephyrOS2.ova/file)  
 
-Import the virtual appliance by clicking file (In your VirtualBox desktop app) ->  import appliance and navigate and select the .ova file you donloaded in the previos step. You may need to adjust the CPU core count and ram allocation if your system does not have sufficent resources.   
+Import the virtual appliance by clicking file (In your VirtualBox desktop app) ->  import appliance and navigate and select the .ova file you downloaded in the previos step. You may need to adjust the CPU core count and ram allocation if your system does not have sufficent resources.   
 
 Boot Up the newly created virtual macine and login to the "User" account and use password "pass"  
   
@@ -20,10 +22,15 @@ Run the command
 Now navigate to our project folder in the terminal inside the zephyr venv    
 `cd ~/Documents/zephyr/zephyrproject/zephyr/Zephyr-Group-3/Project`  
 
-Next compile the project  
+Next, compile the project  
 `make -f Makefile.posix`  
 
 To run the project run the command  
 `./clock`
 
-Enter the username that you used on our AWS website and you will get all of the information for your alarm.
+Enter the username that you used on our AWS website and select the reminder you would like to fetch. You will then receive your alarm time.
+
+# Database Additions
+
+As Use case two and three have been added/implemented to our website and app, we have developed new tables on our AWS database instance. They are as follows:
+
