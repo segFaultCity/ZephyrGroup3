@@ -1,3 +1,11 @@
+# USER ACCOUNT INFORMATION
+
+```
+CREATE TABLE IF NOT EXISTS user_info ( 
+  username VARCHAR(255), 
+  password VARCHAR(255), 
+)  ENGINE=INNODB;
+```
 # USER CREATED INFANT ROUTINES
 ```
 CREATE TABLE IF NOT EXISTS infant_routines ( 
@@ -9,11 +17,25 @@ CREATE TABLE IF NOT EXISTS infant_routines (
 )  ENGINE=INNODB;
 
 ```
-# USER ACCOUNT INFORMATION
+# USER CREATED DAILY SCHEDULES
+```
+CREATE TABLE IF NOT EXISTS daily_schedules ( 
+  username VARCHAR(255), 
+  title VARCHAR(255), 
+  where VARCHAR(255), 
+  time VARCHAR(10), 
+  days VARCHAR(255) 
+)  ENGINE=INNODB;
 
 ```
-CREATE TABLE IF NOT EXISTS user_info ( 
+# USER CREATED RANDOM REMINDERS
+```
+CREATE TABLE IF NOT EXISTS infant_routines ( 
   username VARCHAR(255), 
-  password VARCHAR(255), 
+  title VARCHAR(255), 
+  where VARCHAR(255), 
+  time VARCHAR(255),
+  note VARCHAR(255)
 )  ENGINE=INNODB;
+
 ```
