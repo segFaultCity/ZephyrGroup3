@@ -57,6 +57,15 @@ void dump_addrinfo(const struct addrinfo *ai)
 	       ((struct sockaddr_in *)ai->ai_addr)->sin_port);
 }
 
+void my_alarm(void){
+	int i;
+	for(i = 0; i < 5; i++){
+		sleep(1);
+		printf("ALARM!!!\a\n");
+	}
+	return;
+}
+
 int main(void)
 {
 	static struct addrinfo hints;
@@ -71,13 +80,37 @@ int main(void)
 	char host[64] = "ec2-34-201-220-43.compute-1.amazonaws.com";
 	char username[64];
 	char my_path[1024] = "/remindOclock/webService.php?username=";
-	char my_path2[1024] = "&reminder=infantRoutine";
+	char my_path2[1024] = "&reminder=";
+	char routine[32];
+	//char routine2[32]
+	char input;
 
-	printf("Please Enter a username for infantRoutine: ");
+	ask_for_input:
+	printf("Please enter what routine, you would like to access('1': for infant routine, '2' for daily reminders and '3' for random reminders)\n");
+	scanf("%c", &input);
+	if(input == '1'){
+		char routine2[] = "infantRoutine";
+		strcpy(routine, routine2);
+	}
+	else if(input == '2'){
+		char routine2[] = "dailyReminder";
+		strcpy(routine, routine2);
+	}
+	else if(input == '3'){
+		char routine2[] = "randomReminder";
+		strcpy(routine, routine2);	
+	}
+	else{
+		printf("Invalid input\n");
+		goto ask_for_input;
+	}
+
+	printf("Please Enter a username for %s: ", routine);
 	scanf("%s", username);
 
 	strcat(my_path, username);
 	strcat(my_path, my_path2);
+	strcat(my_path, routine);
 
 
 	printf("Preparing HTTP GET request for http://%s"
@@ -155,3 +188,5 @@ int main(void)
 
 	return 0;
 }
+
+
