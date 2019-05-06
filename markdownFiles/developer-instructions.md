@@ -9,7 +9,7 @@ All of the account settings are handled by our AWS website. We use Zephyr to get
 Install Virtual Box if you have not already done so  
 
 Download the virtual appliace from here:     
-[Download our Build](https://www.mediafire.com/file/l31su68apvbzyzl/ZephyrOS2.ova/file)  
+[Download our Build](https://www.mediafire.com/file/vvu2v1ofzpawlby/ZephyrOS.ova/file)  
 
 Import the virtual appliance by clicking file (In your VirtualBox desktop app) ->  import appliance and navigate and select the .ova file you downloaded in the previos step. You may need to adjust the CPU core count and ram allocation if your system does not have sufficent resources.   
 
