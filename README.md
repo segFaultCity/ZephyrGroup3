@@ -19,12 +19,12 @@ Boot Up the newly created virtual macine and login to the "User" account and use
 Navigate to Documents/zephyr in the terminal  
 
 Run the command  
-`source zephyr/bin/activate`
+`source ~/Documents/zephyr/zephyr/bin/activate`
 
 Now navigate to our project folder in the terminal inside the zephyr venv    
-`cd zephyrproject/zephyr/Zephyr-Group-3/Project`  
+`cd ~/Documents/zephyr/zephyrproject/zephyr/Zephyr-Group-3/Project`  
 
-Next compile the project  
+Next, compile the project  
 `make -f Makefile.posix`  
 
 To run the project run the command  
