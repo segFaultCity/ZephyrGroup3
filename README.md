@@ -30,6 +30,9 @@ Next, compile the project
 To run the project run the command  
 `./clock`
 
+Link to our website:
+[Remind O' Clock](http://ec2-34-201-220-43.compute-1.amazonaws.com/remindOclock/)
+
 # Proof our system works:
 
 Routine Creation:
