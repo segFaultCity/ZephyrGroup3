@@ -35,6 +35,9 @@ Link to our website:
 
 # Proof our system works:
 
+Demo Video:
+![Demo Video](https://youtu.be/v8tjwYbuZyU)
+
 Routine Creation:
 ![Routine Creation](https://github.com/segFaultCity/ZephyrGroup3/blob/master/images/routineCreation.png)  
 
