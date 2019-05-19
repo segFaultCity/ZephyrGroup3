@@ -1,0 +1,4 @@
+project(CLOCK)
+add_library(json SHARED	json.c)
+add_executable(clock src/clock.c)
+target_link_libraries(clock json)

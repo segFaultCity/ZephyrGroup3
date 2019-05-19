@@ -8,7 +8,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <json-c/json.h>
+#include <ctype.h>
+#include <time.h>
+#include <unistd.h>
 #ifndef __ZEPHYR__
 
 #include <netinet/in.h>
@@ -59,12 +62,22 @@ void dump_addrinfo(const struct addrinfo *ai)
 
 void my_alarm(void){
 	int i;
-	for(i = 0; i < 5; i++){
+	for(i = 0; i < 11; i++){
 		sleep(1);
 		printf("ALARM!!!\a\n");
 	}
 	return;
 }
+int first_two_digits(int n) 
+{ 
+    // Remove last digit from number 
+    // till only one digit is left 
+    while (n >= 100)  
+        n /= 100; 
+      
+    // return the first digit 
+    return n; 
+} 
 
 int main(void)
 {
@@ -113,13 +126,13 @@ int main(void)
 	strcat(my_path, routine);
 
 
-	printf("Preparing HTTP GET request for http://%s"
-	       ":" HTTP_PORT "%s \n", host, my_path);
+	//printf("Preparing HTTP GET request for http://%s"
+	//       ":" HTTP_PORT "%s \n", host, my_path);
 
 	hints.ai_family = AF_INET;
 	hints.ai_socktype = SOCK_STREAM;
 	st = getaddrinfo(host, HTTP_PORT, &hints, &res);
-	printf("getaddrinfo status: %d\n", st);
+	//printf("getaddrinfo status: %d\n", st);
 
 	if (st != 0) {
 		printf("Unable to resolve address, quitting\n");
@@ -132,7 +145,7 @@ int main(void)
 	}
 #endif
 
-	dump_addrinfo(res);
+	//dump_addrinfo(res);
 
 #if defined(CONFIG_NET_SOCKETS_SOCKOPT_TLS)
 	sock = socket(res->ai_family, res->ai_socktype, IPPROTO_TLS_1_2);
@@ -140,7 +153,7 @@ int main(void)
 	sock = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
 #endif
 	CHECK(sock);
-	printf("sock = %d\n", sock);
+	//printf("sock = %d\n", sock);
 
 #if defined(CONFIG_NET_SOCKETS_SOCKOPT_TLS)
 	sec_tag_t sec_tag_opt[] = {
@@ -159,15 +172,20 @@ int main(void)
 	strcat(request, host);
 	strcat(request, "\r\n\r\n");		
 
-	printf("REQUEST:%s\n", request);
+	//printf("REQUEST:%s\n", request);
 
 	CHECK(connect(sock, res->ai_addr, res->ai_addrlen));
 	CHECK(send(sock, request, SSTRLEN(request), 0));
 
-	printf("Response:\n\n");
+	struct json_object *parsed_json;
+	struct json_object *my_time;
+	struct json_object *my_username;
 
-	while (1) {
-		int len = recv(sock, response, sizeof(response) - 1, 0);
+
+	char *ptr = response;
+	int len;
+	while(1) {
+		len = recv(sock, response, sizeof(response) - 1, 0);
 
 		if (len < 0) {
 			printf("Error reading response\n");
@@ -179,14 +197,82 @@ int main(void)
 		}
 
 		response[len] = 0;
-		printf("%s", response);
+		
+		//printf("%s\n", response);
+		for(int i = 0; i < len; i++){
+			if(*ptr == '{'){
+				break;
+			}
+			ptr++;
+
+		}
 	}
 
-	printf("\n");
+	
+	parsed_json = json_tokener_parse(ptr);
+	json_object_object_get_ex(parsed_json, "time", &my_time);
+	
+	printf("Setting alarm for: %s\n", json_object_get_string(my_time));
+	
+	char time_string[12];
+	strcpy(time_string, json_object_get_string(my_time));
+	char* time_string_ptr = time_string;
+	char hour[2];
+	int my_minute;
+	int my_hour;
+
+	int i;
+	for(i = 0; i < SSTRLEN(time_string); i++){
+		if(*time_string_ptr == ':'){
+			time_string_ptr++;
+			break;
+		}
+		time_string_ptr++;
+		
+	}
+	if(i > 1){
+			strncpy(hour, time_string, 2); 
+	}
+	else{
+		strncpy(hour, time_string, 1);
+	}
+
+	my_hour = atoi(hour);
+	//printf("Hour%d\n", my_hour);
+	char minute[2];
+	strncpy(minute, time_string_ptr, 2);
+	my_minute = atoi(minute);
+	//printf("Alarm time: Hour: %d Minute: %d\n\n", my_hour, my_minute);
+	my_minute = first_two_digits(my_minute);
+	//printf("Alarm time: Hour: %d Minute: %d\n\n", my_hour, my_minute);
+	time_string_ptr += 2;
+	
+	if(time_string_ptr[0] == 'P' && time_string_ptr[1] == 'M'){
+		my_hour += 12;
+	}
+	
+	time_t currentTime;
+	
+
+	
+	struct tm *my_time2;
+	while(1){
+		time(&currentTime);
+		my_time2 = localtime(&currentTime);
+		
+		//printf("Current Time: Hour: %d Minute: %d\n", my_time2->tm_hour, my_time2->tm_min);
+		//printf("Alarm time: Hour: %d Minute: %d\n\n", my_hour, my_minute);
+		if(my_time2->tm_min == (my_minute) && my_time2->tm_hour == (my_hour)){
+			my_alarm();
+			break;
+		}
+		sleep(1);
+	}
 
 	(void)close(sock);
 
 	return 0;
+	
 }
 
 
